@@ -1,0 +1,266 @@
+<!-- Edit by TSIBULSKY DAVID parts of the code was taken in Copyright 2020 JQueryForm.com   &&  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="jqueryform.com">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title> TSIBULSKY DAVID</title>
+
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/css/bootstrap-datepicker3.min.css"
+    rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <!-- ----------------------------------------------- -->
+
+
+  <div class="container jf-form">
+    <form data-licenseKey="" name="myForm" id="jqueryform-db22ce"
+      action="http://html5-book.co.il/teach/forms/get_form2.php" method="GET">
+      <!-- <input type="hidden" name="method" value="validateForm">
+      <input type="hidden" id="serverValidationFields" name="serverValidationFields" value=""> -->
+
+
+
+      <div class="form-group f1 required" data-fid="f1">
+        <label class="control-label" for="f1">Your Name</label>
+
+        <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-user"></i> </span>
+          <input type="text" class="form-control" id="f1" name="fullName" value="" placeholder="Full name"
+             data-rule-equalto="" required pattern="[A-Za-z ]+"
+            title="Use A-Z ,a-z  and  space" />    
+            <!--                                                       [a-zA-Z ]+[ ][a-zA-Z ]+ -->
+                 <!--                                           I've  decited to inplement this in the JS                                        -->
+       
+          </div>                    
+
+
+      </div>
+
+
+
+
+      <div class="form-group f10 required" data-fid="f10">
+        <label class="control-label" for="f10">Pasward</label>
+
+
+        <input type="password" class="form-control" id="f10" pattern="[a-z0-9]{8}" 
+        name="pass" value="" data-rule-required="true" title="Passward has to include 8 characters .Use 0-9 or a-z"  required  />
+      </div>
+
+
+
+
+      <div class="form-group f2 required" data-fid="f2">
+        <label class="control-label" for="f2">Email</label>
+
+        <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-envelope"></i>
+          </span>
+          <input type="email" class="form-control" id="f2" name="mail" value="" data-rule-email="true"
+            data-rule-required="true" data-rule-equalto="" required />
+        </div>
+
+      </div>
+
+
+
+
+      <div class="form-group f12 " data-fid="f12">
+        <label class="control-label" for="f12">Web Link</label>
+ 
+        <input type="url" class="form-control" id="f12" name="website" value="" placeholder="http://"
+          data-rule-url="true" />
+      </div>
+
+
+
+
+      <div class="form-group f11 " data-fid="f11">
+        <label class="control-label" for="f11">Phone</label>
+
+        <div class="input-group"><span class="input-group-addon left"><i class="glyphicon glyphicon-earphone"></i>
+          </span>
+          <input type="tel" class="form-control" id="f11" name="phone" value="" title="Put 9-10 digit number"
+            pattern="[0-9]{9,10}" data-msg-pattern="Invalid phone number" />
+        </div>
+        <!-- data-rule-pattern="[0-9]{3,4}[ -.]*[0-9]{3,4}[ -.]*[0-9]{4}" -->
+
+      </div>
+
+
+
+
+      <div class="form-group f13 " data-fid="f13">
+        <label class="control-label" for="f13">Coffee</label>
+
+
+        <input type="number" class="form-control " id="f13" name="coffee" value="0" data-rule-number="true" />
+
+      </div>
+
+
+      <label for="tem">Temperatue:</labe> <input type="range" id="tem" min="1" max="5" name="temper"><br>
+
+        <div class="form-group f16 " data-fid="f16">
+          <label class="control-label" for="f16">Address</label>
+
+          <textarea name="address" id="" cols="300" rows="5" id="f16" class="form-control"
+            placeholder="Write you address here....."></textarea>
+          <!-- <input type="text" class="form-control" id="f16" name="address" value=""     /> -->
+
+        </div>
+
+        <div class="form-group f15 " data-fid="f15">
+          <label class="control-label" for="f15">Interests:</label>
+
+          <div class="checkbox">
+            <input id="f15_1" name="interests[]" type="checkbox" value="Reading Books">
+            <label for="f15_1">
+              Reading Books
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <input id="f15_2" name="interests[]" type="checkbox" value="Children">
+            <label for="f15_2">
+              Children
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <input id="f15_3" name="interests[]" type="checkbox" value="Sleeping">
+            <label for="f15_3">
+              Sleeping
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <input id="f15_4" name="interests[]" type="checkbox" value="Studying">
+            <label for="f15_4">
+              Studying
+            </label>
+          </div>
+
+
+
+          <div class="checkbox">
+            <input id="f15_5" name="interests[]" type="checkbox" value="Cleaning">
+            <label for="f15_5">
+              Cleaning
+            </label>
+          </div>
+
+        </div>
+
+
+
+        <div class="form-group f17 " data-fid="f17">
+          <label class="control-label" for="f17">Multiple Choice</label>
+
+          <div class="radio">
+            <input id="f17_1" name="gender" type="radio" value="Male" checked \>
+            <label for="f17_1">
+              Male
+            </label>
+          </div>
+
+          <div class="radio">
+            <input id="f17_2" name="gender" type="radio" value="Female">
+            <label for="f17_2">
+              Female
+            </label>
+          </div>
+
+
+        </div>
+
+        <label>Age:
+          <select name="age" required>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+          </select>
+        </label>
+
+        <div class="form-group submit f0 " data-fid="f0" style="position: relative;">
+          <label class="control-label sr-only" for="f0" style="display: block;">Submit Button</label>
+
+          <div class="progress" style="display: none; z-index: -1; position: absolute;">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:100%">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="z-index: 1;" id="sb">
+            Submit
+          </button>
+          <!-- <input type="submit" id="sb" value="Send:"> -->
+        </div>
+
+
+    </form>
+
+
+  <!-- ----------------------------------------------- -->
+
+
+</body>
+<script>
+
+  document.getElementById("sb").onclick = function () {
+
+    console.log("I caught you click :)");
+
+    //checkin  if the name has at least one spase
+    var x = document.forms["myForm"]["fullName"].value;
+    if (!x.includes(" ") && (x.length != 0)) {
+      alert("Name must be filled out . Use A-Z ,a-z  and at least 1 space");
+      return false;
+    }
+
+
+    // checking checkboxes (if at least one is checked)
+    var ch = document.getElementsByName('interests[]');
+    var isAnyChecked = false;
+    for (var i = 0; i < ch.length; i++) {
+      if (ch[i].checked == true)
+        isAnyChecked = true;
+    }
+
+    if (isAnyChecked == false) {
+      alert("You have'nt chosen any interest");
+      return false;
+    }
+
+
+    //costumer validity mesege
+    var input = document.getElementById('tel');
+    input.oninvalid = function (event) {
+      event.target.setCustomValidity('Use Numbers');
+    }
+
+  }
+</script>
+
+
+</html>
+
+
+
+
+
+
+
